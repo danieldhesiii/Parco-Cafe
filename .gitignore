@@ -1,0 +1,14 @@
+# Dependencies (reinstall with: npm install)
+node_modules/
+
+# graphify knowledge-graph artifacts (not part of the website)
+graphify-out/
+
+# Local Claude Code settings
+.claude/settings.local.json
+
+# OS cruft
+.DS_Store
+
+# NOTE: lib/ (vendored Lenis, GSAP, Splitting, Swiper) and assets/img/
+# ARE committed on purpose — the static site needs them to run.

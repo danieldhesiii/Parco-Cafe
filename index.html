@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cafe Parco — Italian café on the edge of Vauxhall Park, London</title>
+  <meta name="description" content="A little corner of Italy beside Vauxhall Park. All-day breakfast, own-made lasagne, paninis, cakes, proper coffee and Italian ice cream. 190 Fentiman Rd, London SW8 1QY." />
+
+  <!-- Favicon: simple espresso cup -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232a1e16'/%3E%3Cpath d='M8 11h13v6a5 5 0 0 1-5 5h-3a5 5 0 0 1-5-5z' fill='none' stroke='%23d89a4e' stroke-width='1.8'/%3E%3Cpath d='M21 13h2.5a2.5 2.5 0 0 1 0 5H21' fill='none' stroke='%23d89a4e' stroke-width='1.8'/%3E%3C/svg%3E" />
+
+  <!-- Fonts: Fraunces (display, optical) + Manrope (UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Vendored animation packs -->
+  <link rel="stylesheet" href="lib/lenis/lenis.css" />
+  <link rel="stylesheet" href="lib/splitting/splitting.css" />
+  <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Warm film-grain overlay for analogue texture -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="header__inner">
+      <a href="#top" class="brand" aria-label="Cafe Parco — home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="26" height="26"><path d="M7 11h15v6.5a5.5 5.5 0 0 1-5.5 5.5h-4A5.5 5.5 0 0 1 7 17.5z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M22 13.2h2.8a2.8 2.8 0 0 1 0 5.6H22" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M11 4.5c-1 1.4-1 2.6 0 4M15.5 4c-1 1.4-1 2.6 0 4M20 4.5c-1 1.4-1 2.6 0 4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity=".7"/></svg>
+        </span>
+        <span class="brand__word">Cafe&nbsp;Parco</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#menu">Menu</a>
+        <a href="#story">Our Story</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#visit">Visit</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="#menu" class="btn btn--ghost btn--sm header__menu-link">See the menu</a>
+        <a href="tel:+442070910240" class="btn btn--solid btn--sm header__call">
+          <svg viewBox="0 0 20 20" width="15" height="15" aria-hidden="true"><path d="M4 3h3l1.5 4-2 1.2a11 11 0 0 0 5.3 5.3L17 11l-1 3v3h-3A13 13 0 0 1 1 4V3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          <span>020&nbsp;7091&nbsp;0240</span>
+        </a>
+        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <nav aria-label="Mobile">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a href="tel:+442070910240" class="btn btn--solid mobile-nav__call">Call 020 7091 0240</a>
+  </div>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero__media">
+        <img src="assets/img/terrace.jpg" alt="Cafe Parco's terrace of marble bistro tables on the edge of Vauxhall Park" />
+        <div class="hero__scrim"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="eyebrow eyebrow--light">Italian café · Vauxhall Park · since the neighbourhood needed one</p>
+        <h1 class="hero__title" data-splitting>A little corner<br>of Italy by<br>the&nbsp;park.</h1>
+        <p class="hero__lede">Espresso under the plane trees, own-made lasagne at lunch, and a slice of something with your afternoon coffee. Dine in, take away, or let us deliver.</p>
+        <div class="hero__cta">
+          <a href="#menu" class="btn btn--solid btn--lg">Explore the menu</a>
+          <a href="tel:+442070910240" class="btn btn--outline-light btn--lg">Call to book a table</a>
+        </div>
+      </div>
+
+      <div class="hero__meta">
+        <div class="rating">
+          <span class="rating__stars" aria-hidden="true">★★★★★</span>
+          <span class="rating__text"><strong>4.7</strong> · 341 Google reviews</span>
+        </div>
+        <div class="status" data-open-status>
+          <span class="status__dot"></span>
+          <span class="status__text">Checking hours…</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE STRIP ============ -->
+    <div class="strip" aria-hidden="true">
+      <div class="strip__track">
+        <span>All-day breakfast</span><span class="strip__dot">✦</span>
+        <span>Own-made lasagne</span><span class="strip__dot">✦</span>
+        <span>Paninis &amp; ciabatte</span><span class="strip__dot">✦</span>
+        <span>Proper espresso</span><span class="strip__dot">✦</span>
+        <span>Cakes &amp; pastries</span><span class="strip__dot">✦</span>
+        <span>Italian ice cream</span><span class="strip__dot">✦</span>
+        <span>All-day breakfast</span><span class="strip__dot">✦</span>
+        <span>Own-made lasagne</span><span class="strip__dot">✦</span>
+        <span>Paninis &amp; ciabatte</span><span class="strip__dot">✦</span>
+        <span>Proper espresso</span><span class="strip__dot">✦</span>
+        <span>Cakes &amp; pastries</span><span class="strip__dot">✦</span>
+        <span>Italian ice cream</span><span class="strip__dot">✦</span>
+      </div>
+    </div>
+
+    <!-- ============ STORY ============ -->
+    <section class="story" id="story">
+      <div class="story__grid">
+        <div class="story__text">
+          <p class="eyebrow"><span class="num">01</span> Our story</p>
+          <h2 class="h2" data-splitting>Cooked the way<br>nonna would<br>approve of.</h2>
+          <p>We're a family-run Italian café tucked against the green edge of Vauxhall Park. Mornings start with the hiss of the coffee machine and the smell of cornetti; by lunch the counter fills with own-made lasagne, veal Milanese and ciabatte stacked the way they should be.</p>
+          <p>Nothing here is rushed and nothing is pretending to be more than it is — good ingredients, cooked properly, served by people who'll remember your order next time.</p>
+          <div class="story__signs">
+            <div class="sign"><span class="sign__big">7</span><span class="sign__small">days a week</span></div>
+            <div class="sign"><span class="sign__big">£10–20</span><span class="sign__small">per person</span></div>
+            <div class="sign"><span class="sign__big">4.7★</span><span class="sign__small">on Google</span></div>
+          </div>
+        </div>
+        <figure class="story__figure">
+          <img src="assets/img/coffee-cappuccino.jpg" alt="A cappuccino with latte art on a wooden table beside the park at Cafe Parco" />
+          <figcaption>Afternoon light, marble tables, the slow kind of coffee.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ FAVOURITES ============ -->
+    <section class="favs">
+      <div class="favs__head">
+        <p class="eyebrow eyebrow--light"><span class="num">02</span> What people order</p>
+        <h2 class="h2" data-splitting>The plates we're<br>known&nbsp;for.</h2>
+      </div>
+      <div class="favs__grid">
+        <figure class="fav">
+          <div class="fav__img"><img src="assets/img/dish-lasagne.jpg" alt="Own-made lasagne al forno with a side salad" loading="lazy" /></div>
+          <figcaption><span class="fav__name">Lasagne al Forno</span><span class="fav__tag">House favourite · £12.50</span></figcaption>
+        </figure>
+        <figure class="fav">
+          <div class="fav__img"><img src="assets/img/dish-salmon-eggs.jpg" alt="Smoked salmon and scrambled eggs on sourdough toast" loading="lazy" /></div>
+          <figcaption><span class="fav__name">Salmon &amp; Scrambled Eggs</span><span class="fav__tag">All-day breakfast</span></figcaption>
+        </figure>
+        <figure class="fav">
+          <div class="fav__img"><img src="assets/img/dish-benedict.jpg" alt="Eggs Benedict with hollandaise and a side salad" loading="lazy" /></div>
+          <figcaption><span class="fav__name">Eggs Benedict</span><span class="fav__tag">£9.50</span></figcaption>
+        </figure>
+        <figure class="fav">
+          <div class="fav__img"><img src="assets/img/dish-avocado-eggs.jpg" alt="Smashed avocado and poached eggs on toast with iced coffee" loading="lazy" /></div>
+          <figcaption><span class="fav__name">Avocado &amp; Poached Eggs</span><span class="fav__tag">£9.00</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="menu" id="menu">
+      <div class="menu__head">
+        <p class="eyebrow"><span class="num">03</span> The menu</p>
+        <h2 class="h2" data-splitting>Breakfast through<br>to ice&nbsp;cream.</h2>
+        <p class="menu__note">Served daily. Specials change with the season and what looked good at the market — pop in or call <a href="tel:+442070910240">020&nbsp;7091&nbsp;0240</a> for today's. Prices are a guide; please confirm in the café.</p>
+      </div>
+
+      <div class="menu__tabs" role="tablist" aria-label="Menu categories">
+        <button class="menu__tab is-active" role="tab" aria-selected="true" data-tab="breakfast">All-Day Breakfast</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-tab="paninis">Paninis &amp; Ciabatte</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-tab="kitchen">Italian Kitchen</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-tab="salads">Salads &amp; Soups</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-tab="sweet">Cakes &amp; Gelato</button>
+        <button class="menu__tab" role="tab" aria-selected="false" data-tab="drinks">Coffee &amp; Drinks</button>
+      </div>
+
+      <div class="menu__panels">
+        <!-- Breakfast -->
+        <div class="menu__panel is-active" data-panel="breakfast" role="tabpanel">
+          <ul class="dishes">
+            <li><div class="dish__row"><span class="dish__name">The Full English</span><span class="dish__dot"></span><span class="dish__price">£10.50</span></div><p class="dish__desc">Cumberland sausage, smoked bacon, eggs your way, mushrooms, tomato, beans &amp; toast.</p></li>
+            <li><div class="dish__row"><span class="dish__name">Continental Plate</span><span class="dish__dot"></span><span class="dish__price">£8.00</span></div><p class="dish__desc">Cured meats, cheese, fruit, a warm cornetto and butter &amp; jam.</p></li>
+            <li><div class="dish__row"><span class="dish__name">Eggs Benedict / Florentine</span><span class="dish__dot"></span><span class="dish__price">£9.50</span></div><p class="dish__desc">Poached eggs, hollandaise, toasted muffin — with ham or spinach.</p></li>
+            <li><div class="dish__row"><span class="dish__name">Avocado &amp; Poached Eggs</span><span class="dish__dot"></span><span class="dish__price">£9.00</span></div><p class="dish__desc">Smashed avocado and chilli on toasted sourdough. <em class="veg">v</em></p></li>
+            <li><div class="dish__row"><span class="dish__name">Granola, Yoghurt &amp; Fruit</span><span class="dish__dot"></span><span class="dish__price">£6.50</span></div><p class="dish__desc">House granola, natural yoghurt and seasonal fruit. <em class="veg">v</em></p></li>
+          </ul>
+        </div>
+
+        <!-- Paninis -->
+        <div class="menu__panel" data-panel="paninis" role="tabpanel" hidden>
+          <ul class="dishes">
+            <li><div class="dish__row"><span class="dish__name">Parma Ham &amp; Mozzarella</span><span class="dish__dot"></span><span class="dish__price">£8.50</span></div><p class="dish__desc">Parma ham, buffalo mozzarella, rocket &amp; tomato in warm ciabatta.</p></li>
+            <li><div class="dish__row"><span class="dish__name">Chicken Milanese Ciabatta</span><span class="dish__dot"></span><span class="dish__price">£8.95</span></div><p class="dish__desc">Breaded chicken, lemon mayo and salad leaves.</p></li>
+            <li><div class="dish__row"><span class="dish__name">Caprese</span><span class="dish__dot"></span><span class="dish__price">£7.50</span></div><p class="dish__desc">Mozzarella, tomato, basil and good olive oil. <em class="veg">v</em></p></li>
+            <li><div class="dish__row"><span class="dish__name">Tuna Melt</span><span class="dish__dot"></span><span class="dish__price">£7.95</span></div><p class="dish__desc">Tuna, melted cheese and red onion, toasted.</p></li>
+          </ul>
+        </div>
+
+        <!-- Kitchen -->
+        <div class="menu__panel" data-panel="kitchen" role="tabpanel" hidden>
+          <ul class="dishes">
+            <li><div class="dish__row"><span class="dish__name">Lasagne al Forno</span><span class="dish__dot"></span><span class="dish__price">£12.50</span></div><p class="dish__desc">Our own-made lasagne, baked to order with a green salad. <em class="signature">house favourite</em></p></li>
+            <li><div class="dish__row"><span class="dish__name">Veal Milanese</span><span class="dish__dot"></span><span class="dish__price">£15.00</span></div><p class="dish__desc">Breaded veal, lemon, rocket and cherry tomatoes.</p></li>
+            <li><div class="dish__row"><span class="dish__name">Calzone</span><span class="dish__dot"></span><span class="dish__price">£11.00</span></div><p class="dish__desc">Folded pizza filled with ham, mushroom and mozzarella.</p></li>
+            <li><div class="dish__row"><span class="dish__name">Penne Arrabbiata</span><span class="dish__dot"></span><span class="dish__price">£10.00</span></div><p class="dish__desc">Pasta in a garlic, tomato and chilli sauce. <em class="veg">v</em></p></li>
+            <li><div class="dish__row"><span class="dish__name">Daily Specials</span><span class="dish__dot"></span><span class="dish__price">ask us</span></div><p class="dish__desc">Quiches, daily roasts and seasonal plates — written up on the board each morning.</p></li>
+          </ul>
+        </div>
+
+        <!-- Salads -->
+        <div class="menu__panel" data-panel="salads" role="tabpanel" hidden>
+          <ul class="dishes">
+            <li><div class="dish__row"><span class="dish__name">Caprese Salad</span><span class="dish__dot"></span><span class="dish__price">£8.00</span></div><p class="dish__desc">Buffalo mozzarella, ripe tomato, basil. <em class="veg">v</em></p></li>
+            <li><div class="dish__row"><span class="dish__name">Chicken Caesar</span><span class="dish__dot"></span><span class="dish__price">£9.50</span></div><p class="dish__desc">Cos, parmesan, croutons and grilled chicken.</p></li>
+            <li><div class="dish__row"><span class="dish__name">Soup of the Day</span><span class="dish__dot"></span><span class="dish__price">£6.00</span></div><p class="dish__desc">Made fresh each morning, served with warm bread. <em class="veg">v</em></p></li>
+          </ul>
+        </div>
+
+        <!-- Sweet -->
+        <div class="menu__panel" data-panel="sweet" role="tabpanel" hidden>
+          <ul class="dishes">
+            <li><div class="dish__row"><span class="dish__name">Tiramisù</span><span class="dish__dot"></span><span class="dish__price">£5.50</span></div><p class="dish__desc">Coffee-soaked sponge, mascarpone and cocoa. <em class="veg">v</em></p></li>
+            <li><div class="dish__row"><span class="dish__name">Cannoli</span><span class="dish__dot"></span><span class="dish__price">£4.00</span></div><p class="dish__desc">Crisp shells filled with sweet ricotta. <em class="veg">v</em></p></li>
+            <li><div class="dish__row"><span class="dish__name">Cakes &amp; Pastries</span><span class="dish__dot"></span><span class="dish__price">from £3.50</span></div><p class="dish__desc">Whatever's on the counter that day — cornetti, tortes, slices.</p></li>
+            <li><div class="dish__row"><span class="dish__name">Italian Ice Cream</span><span class="dish__dot"></span><span class="dish__price">from £3.00</span></div><p class="dish__desc">Scoops of proper gelato. <em class="veg">v</em></p></li>
+          </ul>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu__panel" data-panel="drinks" role="tabpanel" hidden>
+          <ul class="dishes">
+            <li><div class="dish__row"><span class="dish__name">Espresso / Macchiato</span><span class="dish__dot"></span><span class="dish__price">£2.50</span></div><p class="dish__desc">Our house blend, pulled short.</p></li>
+            <li><div class="dish__row"><span class="dish__name">Cappuccino / Flat White</span><span class="dish__dot"></span><span class="dish__price">£3.20</span></div><p class="dish__desc">With oat or whole milk.</p></li>
+            <li><div class="dish__row"><span class="dish__name">Hot Chocolate</span><span class="dish__dot"></span><span class="dish__price">£3.50</span></div><p class="dish__desc">Thick, Italian-style, with cream if you like.</p></li>
+            <li><div class="dish__row"><span class="dish__name">Fresh Juice &amp; Soft Drinks</span><span class="dish__dot"></span><span class="dish__price">from £2.80</span></div><p class="dish__desc">Freshly squeezed orange and the usual bottles.</p></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu__cta">
+        <p>Hungry now? We do dine-in, takeaway and delivery.</p>
+        <a href="tel:+442070910240" class="btn btn--solid btn--lg">Call to order · 020 7091 0240</a>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="gallery" id="gallery">
+      <div class="gallery__head">
+        <p class="eyebrow"><span class="num">04</span> The gallery</p>
+        <h2 class="h2" data-splitting>A look around.</h2>
+        <p class="gallery__note">Swipe through the café and the park it sits beside.</p>
+      </div>
+
+      <div class="swiper gallery__swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <figure class="shot"><img src="assets/img/terrace-summer.jpg" alt="Green parasols over picnic tables on the terrace in summer" loading="lazy" /><figcaption>Summer on the terrace</figcaption></figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="shot"><img src="assets/img/terrace-people.jpg" alt="People dining at picnic benches beside Vauxhall Park" loading="lazy" /><figcaption>Lunch in the park</figcaption></figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="shot"><img src="assets/img/drinks-lattes.jpg" alt="Two lattes dusted with chocolate in tall glasses" loading="lazy" /><figcaption>Coffee, the Italian way</figcaption></figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="shot"><img src="assets/img/cakes-counter.jpg" alt="The cake counter with chocolate crunch slices and biscuits" loading="lazy" /><figcaption>Whatever's on the counter</figcaption></figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="shot"><img src="assets/img/dish-pasta.jpg" alt="A plate of pasta with salad on the terrace" loading="lazy" /><figcaption>From the kitchen</figcaption></figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="shot"><img src="assets/img/terrace-brunch.jpg" alt="Brunch plates and a latte on the wooden terrace" loading="lazy" /><figcaption>Slow mornings</figcaption></figure>
+          </div>
+          <div class="swiper-slide">
+            <figure class="shot"><img src="assets/img/terrace.jpg" alt="Marble bistro tables on the terrace by the park" loading="lazy" /><figcaption>Tables under the trees</figcaption></figure>
+          </div>
+        </div>
+        <div class="swiper-button-prev gallery__nav"></div>
+        <div class="swiper-button-next gallery__nav"></div>
+        <div class="swiper-pagination gallery__dots"></div>
+      </div>
+    </section>
+
+    <!-- ============ VISIT ============ -->
+    <section class="visit" id="visit">
+      <div class="visit__grid">
+        <div class="visit__info">
+          <p class="eyebrow"><span class="num">05</span> Find us</p>
+          <h2 class="h2" data-splitting>On the edge of<br>Vauxhall&nbsp;Park.</h2>
+
+          <a class="visit__addr" href="https://www.google.com/maps/dir/?api=1&destination=Cafe+Parco,+190+Fentiman+Rd,+London+SW8+1QY" target="_blank" rel="noopener">
+            190 Fentiman Road<br>London SW8 1QY
+            <span class="visit__dir">Get directions →</span>
+          </a>
+
+          <a class="visit__phone" href="tel:+442070910240">
+            <svg viewBox="0 0 20 20" width="20" height="20" aria-hidden="true"><path d="M4 3h3l1.5 4-2 1.2a11 11 0 0 0 5.3 5.3L17 11l-1 3v3h-3A13 13 0 0 1 1 4V3z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            020 7091 0240
+          </a>
+
+          <div class="visit__tags">
+            <span>Dine-in</span><span>Takeaway</span><span>Delivery</span>
+          </div>
+
+          <div class="hours" aria-label="Opening hours">
+            <h3>Opening hours</h3>
+            <ul>
+              <li data-day="1-5"><span>Monday – Friday</span><span>8:30 – 18:00</span></li>
+              <li data-day="6"><span>Saturday</span><span>9:00 – 18:00</span></li>
+              <li data-day="0"><span>Sunday</span><span>9:00 – 18:00</span></li>
+            </ul>
+            <p class="hours__status" data-open-status>
+              <span class="status__dot"></span><span class="status__text">Checking hours…</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="visit__map">
+          <iframe
+            title="Map showing Cafe Parco, 190 Fentiman Road, London SW8 1QY"
+            src="https://www.google.com/maps?q=190+Fentiman+Rd,+London+SW8+1QY&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="brand__word">Cafe Parco</span>
+        <p>A little corner of Italy beside Vauxhall Park.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Visit</h4>
+        <p>190 Fentiman Road<br>London SW8 1QY</p>
+        <p><a href="tel:+442070910240">020 7091 0240</a></p>
+      </div>
+      <div class="footer__col">
+        <h4>Hours</h4>
+        <p>Mon–Fri · 8:30–18:00<br>Sat–Sun · 9:00–18:00</p>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <p><a href="#menu">Menu</a> · <a href="#gallery">Gallery</a><br><a href="#visit">Directions</a></p>
+      </div>
+    </div>
+    <div class="footer__base">
+      <span>© <span data-year>2026</span> Cafe Parco · Vauxhall, London</span>
+      <a href="tel:+442070910240" class="footer__call">Call us</a>
+    </div>
+  </footer>
+
+  <!-- Persistent mobile call bar -->
+  <a href="tel:+442070910240" class="call-bar" aria-label="Call Cafe Parco">
+    <svg viewBox="0 0 20 20" width="17" height="17" aria-hidden="true"><path d="M4 3h3l1.5 4-2 1.2a11 11 0 0 0 5.3 5.3L17 11l-1 3v3h-3A13 13 0 0 1 1 4V3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>
+    Call · 020 7091 0240
+  </a>
+
+  <!-- Libraries -->
+  <script src="lib/gsap/gsap.min.js"></script>
+  <script src="lib/gsap/ScrollTrigger.min.js"></script>
+  <script src="lib/lenis/lenis.min.js"></script>
+  <script src="lib/splitting/splitting.min.js"></script>
+  <script src="lib/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
