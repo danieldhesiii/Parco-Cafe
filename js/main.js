@@ -82,9 +82,9 @@ if (!reduceMotion) {
     });
   });
 
-  /* Hero parallax */
+  /* Hero image: gentle scale on scroll (no translate — avoids gaps in the split layout) */
   gsap.to('.hero__media img', {
-    yPercent: 12, ease: 'none',
+    scale: 1.06, ease: 'none', transformOrigin: 'center',
     scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true },
   });
 }
