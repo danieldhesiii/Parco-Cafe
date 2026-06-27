@@ -28,11 +28,13 @@ if (!reduceMotion) {
     link.addEventListener('click', (e) => {
       const id = link.getAttribute('href');
       if (id.length < 2) return;
+      e.preventDefault();
+      closeMobileNav();
+      // Home / logo -> very top of the page
+      if (id === '#top') { lenis.scrollTo(0); return; }
       const target = document.querySelector(id);
       if (!target) return;
-      e.preventDefault();
       lenis.scrollTo(target, { offset: -70 });
-      closeMobileNav();
     });
   });
 }
