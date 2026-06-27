@@ -110,6 +110,8 @@ a { color: inherit; text-decoration: none; }
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
   transition: background 0.4s var(--ease), box-shadow 0.4s, padding 0.4s;
   padding: 1.4rem 0;
+  /* Soft cream fade so the dark nav stays legible over the hero image at the very top */
+  background: linear-gradient(to bottom, rgba(246,239,226,0.97) 0%, rgba(246,239,226,0.75) 55%, rgba(246,239,226,0) 100%);
 }
 .site-header.scrolled {
   background: rgba(246, 239, 226, 0.88);
@@ -335,6 +337,29 @@ a { color: inherit; text-decoration: none; }
 .gallery__dots { position: static; margin-top: 1.8rem; }
 .swiper-pagination-bullet { background: var(--ink); opacity: 0.25; }
 .swiper-pagination-bullet-active { background: var(--terracotta); opacity: 1; }
+
+/* ============ REVIEWS ============ */
+.reviews { background: var(--ink); color: var(--paper); padding: clamp(4.5rem, 11vw, 9rem) var(--gutter); }
+.reviews__head { max-width: var(--maxw); margin: 0 auto; }
+.reviews__head .h2 { color: var(--paper); margin-top: 0.4rem; }
+.reviews__score { display: flex; align-items: center; gap: 0.8rem; margin-top: 1.6rem; flex-wrap: wrap; }
+.reviews__num { font-family: var(--font-display); font-size: 2.6rem; font-weight: 600; color: var(--amber); line-height: 1; }
+.reviews__stars { color: var(--amber); letter-spacing: 2px; font-size: 1.1rem; }
+.reviews__count { color: rgba(251,247,238,0.72); font-size: 0.92rem; }
+.reviews__cta { display: flex; gap: 0.8rem; margin-top: 1.9rem; flex-wrap: wrap; }
+.reviews__swiper { max-width: var(--maxw); margin: 2.8rem auto 0; overflow: visible; }
+.reviews__swiper .swiper-slide { width: clamp(280px, 72vw, 440px); height: auto; }
+.review {
+  background: rgba(251,247,238,0.05); border: 1px solid rgba(251,247,238,0.14);
+  border-radius: var(--radius); padding: 2rem; height: 100%;
+  display: flex; flex-direction: column; gap: 1.1rem;
+}
+.review__stars { color: var(--amber); letter-spacing: 2px; font-size: 0.95rem; }
+.review p { font-family: var(--font-display); font-style: italic; font-size: 1.3rem; line-height: 1.4; }
+.review footer { margin-top: auto; font-size: 0.8rem; letter-spacing: 0.05em; text-transform: uppercase; color: rgba(251,247,238,0.6); }
+.reviews__dots { position: static; margin-top: 1.9rem; }
+.reviews__dots .swiper-pagination-bullet { background: var(--paper); opacity: 0.3; }
+.reviews__dots .swiper-pagination-bullet-active { background: var(--amber); opacity: 1; }
 
 /* ============ VISIT ============ */
 .visit { background: var(--park); color: var(--paper); max-width: none; }

@@ -59,6 +59,7 @@ if (!reduceMotion) {
     '.favs__head',
     '.menu__note', '.menu__tabs', '.menu__cta',
     '.gallery__note', '.gallery__swiper',
+    '.reviews__head', '.reviews__score', '.reviews__cta', '.reviews__swiper',
     '.visit__addr', '.visit__phone', '.visit__tags', '.hours', '.visit__map',
   ];
   reveals.forEach((sel) => {
@@ -146,6 +147,16 @@ new Swiper('.gallery__swiper', {
   speed: 600,
   navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
   pagination: { el: '.gallery__dots', clickable: true },
+  breakpoints: { 768: { spaceBetween: 28 } },
+});
+
+/* ---------- 7b. Swiper reviews ---------- */
+new Swiper('.reviews__swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+  grabCursor: true,
+  speed: 600,
+  pagination: { el: '.reviews__dots', clickable: true },
   breakpoints: { 768: { spaceBetween: 28 } },
 });
 
