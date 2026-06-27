@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="lib/lenis/lenis.css" />
   <link rel="stylesheet" href="lib/splitting/splitting.css" />
   <link rel="stylesheet" href="lib/swiper/swiper-bundle.min.css" />
+  <link rel="preload" as="image" href="assets/img/terrace.jpg" fetchpriority="high" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -91,7 +92,7 @@
       </div>
 
       <div class="hero__media">
-        <img src="assets/img/terrace.jpg" alt="Parco Cafe's terrace of marble bistro tables on the edge of Vauxhall Park" />
+        <img src="assets/img/terrace.jpg" fetchpriority="high" decoding="async" alt="Parco Cafe's terrace of marble bistro tables on the edge of Vauxhall Park" />
       </div>
     </section>
 
@@ -128,7 +129,7 @@
           </div>
         </div>
         <figure class="story__figure">
-          <img src="assets/img/coffee-cappuccino.jpg" alt="A cappuccino with latte art on a wooden table beside the park at Cafe Parco" />
+          <img decoding="async" src="assets/img/coffee-cappuccino.jpg" alt="A cappuccino with latte art on a wooden table beside the park at Cafe Parco" />
           <figcaption>Afternoon light, marble tables, the slow kind of coffee.</figcaption>
         </figure>
       </div>
@@ -142,19 +143,19 @@
       </div>
       <div class="favs__grid">
         <figure class="fav">
-          <div class="fav__img"><img src="assets/img/dish-lasagne.jpg" alt="Own-made lasagne al forno with a side salad" loading="lazy" /></div>
+          <div class="fav__img"><img decoding="async" src="assets/img/dish-lasagne.jpg" alt="Own-made lasagne al forno with a side salad" loading="lazy" /></div>
           <figcaption><span class="fav__name">Lasagne al Forno</span><span class="fav__tag">House favourite · £12.50</span></figcaption>
         </figure>
         <figure class="fav">
-          <div class="fav__img"><img src="assets/img/dish-salmon-eggs.jpg" alt="Smoked salmon and scrambled eggs on sourdough toast" loading="lazy" /></div>
+          <div class="fav__img"><img decoding="async" src="assets/img/dish-salmon-eggs.jpg" alt="Smoked salmon and scrambled eggs on sourdough toast" loading="lazy" /></div>
           <figcaption><span class="fav__name">Salmon &amp; Scrambled Eggs</span><span class="fav__tag">All-day breakfast</span></figcaption>
         </figure>
         <figure class="fav">
-          <div class="fav__img"><img src="assets/img/dish-benedict.jpg" alt="Eggs Benedict with hollandaise and a side salad" loading="lazy" /></div>
+          <div class="fav__img"><img decoding="async" src="assets/img/dish-benedict.jpg" alt="Eggs Benedict with hollandaise and a side salad" loading="lazy" /></div>
           <figcaption><span class="fav__name">Eggs Benedict</span><span class="fav__tag">£9.50</span></figcaption>
         </figure>
         <figure class="fav">
-          <div class="fav__img"><img src="assets/img/dish-avocado-eggs.jpg" alt="Smashed avocado and poached eggs on toast with iced coffee" loading="lazy" /></div>
+          <div class="fav__img"><img decoding="async" src="assets/img/dish-avocado-eggs.jpg" alt="Smashed avocado and poached eggs on toast with iced coffee" loading="lazy" /></div>
           <figcaption><span class="fav__name">Avocado &amp; Poached Eggs</span><span class="fav__tag">£9.00</span></figcaption>
         </figure>
       </div>
@@ -257,25 +258,25 @@
       <div class="swiper gallery__swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <figure class="shot"><img src="assets/img/terrace-summer.jpg" alt="Green parasols over picnic tables on the terrace in summer" loading="lazy" /><figcaption>Summer on the terrace</figcaption></figure>
+            <figure class="shot"><img decoding="async" src="assets/img/terrace-summer.jpg" alt="Green parasols over picnic tables on the terrace in summer" loading="lazy" /><figcaption>Summer on the terrace</figcaption></figure>
           </div>
           <div class="swiper-slide">
-            <figure class="shot"><img src="assets/img/terrace-people.jpg" alt="People dining at picnic benches beside Vauxhall Park" loading="lazy" /><figcaption>Lunch in the park</figcaption></figure>
+            <figure class="shot"><img decoding="async" src="assets/img/terrace-people.jpg" alt="People dining at picnic benches beside Vauxhall Park" loading="lazy" /><figcaption>Lunch in the park</figcaption></figure>
           </div>
           <div class="swiper-slide">
-            <figure class="shot"><img src="assets/img/drinks-lattes.jpg" alt="Two lattes dusted with chocolate in tall glasses" loading="lazy" /><figcaption>Coffee, done properly</figcaption></figure>
+            <figure class="shot"><img decoding="async" src="assets/img/drinks-lattes.jpg" alt="Two lattes dusted with chocolate in tall glasses" loading="lazy" /><figcaption>Coffee, done properly</figcaption></figure>
           </div>
           <div class="swiper-slide">
-            <figure class="shot"><img src="assets/img/cakes-counter.jpg" alt="The cake counter with chocolate crunch slices and biscuits" loading="lazy" /><figcaption>Whatever's on the counter</figcaption></figure>
+            <figure class="shot"><img decoding="async" src="assets/img/cakes-counter.jpg" alt="The cake counter with chocolate crunch slices and biscuits" loading="lazy" /><figcaption>Whatever's on the counter</figcaption></figure>
           </div>
           <div class="swiper-slide">
-            <figure class="shot"><img src="assets/img/dish-pasta.jpg" alt="A plate of pasta with salad on the terrace" loading="lazy" /><figcaption>From the kitchen</figcaption></figure>
+            <figure class="shot"><img decoding="async" src="assets/img/dish-pasta.jpg" alt="A plate of pasta with salad on the terrace" loading="lazy" /><figcaption>From the kitchen</figcaption></figure>
           </div>
           <div class="swiper-slide">
-            <figure class="shot"><img src="assets/img/terrace-brunch.jpg" alt="Brunch plates and a latte on the wooden terrace" loading="lazy" /><figcaption>Slow mornings</figcaption></figure>
+            <figure class="shot"><img decoding="async" src="assets/img/terrace-brunch.jpg" alt="Brunch plates and a latte on the wooden terrace" loading="lazy" /><figcaption>Slow mornings</figcaption></figure>
           </div>
           <div class="swiper-slide">
-            <figure class="shot"><img src="assets/img/terrace.jpg" alt="Marble bistro tables on the terrace by the park" loading="lazy" /><figcaption>Tables under the trees</figcaption></figure>
+            <figure class="shot"><img decoding="async" src="assets/img/terrace.jpg" alt="Marble bistro tables on the terrace by the park" loading="lazy" /><figcaption>Tables under the trees</figcaption></figure>
           </div>
         </div>
         <div class="swiper-button-prev gallery__nav"></div>
@@ -420,11 +421,11 @@
   </a>
 
   <!-- Libraries -->
-  <script src="lib/gsap/gsap.min.js"></script>
-  <script src="lib/gsap/ScrollTrigger.min.js"></script>
-  <script src="lib/lenis/lenis.min.js"></script>
-  <script src="lib/splitting/splitting.min.js"></script>
-  <script src="lib/swiper/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
+  <script defer src="lib/gsap/gsap.min.js"></script>
+  <script defer src="lib/gsap/ScrollTrigger.min.js"></script>
+  <script defer src="lib/lenis/lenis.min.js"></script>
+  <script defer src="lib/splitting/splitting.min.js"></script>
+  <script defer src="lib/swiper/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
 </body>
 </html>
