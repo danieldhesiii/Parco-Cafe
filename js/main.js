@@ -139,16 +139,7 @@ tabs.forEach((tab) => {
   });
 });
 
-/* ---------- 7. Swiper gallery ---------- */
-new Swiper('.gallery__swiper', {
-  slidesPerView: 'auto',
-  spaceBetween: 20,
-  grabCursor: true,
-  speed: 600,
-  navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
-  pagination: { el: '.gallery__dots', clickable: true },
-  breakpoints: { 768: { spaceBetween: 28 } },
-});
+/* ---------- 7. Gallery is a CSS grid now (no Swiper) ---------- */
 
 /* ---------- 7b. Swiper reviews ---------- */
 new Swiper('.reviews__swiper', {
